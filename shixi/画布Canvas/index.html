@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>canvas(画布)入门</title>
+	</head>
+	<body>
+		<!-- canvas是一个画布，它是一个用于绘制图形的一个标签 -->
+		<!-- 它本来没有绘制的功能，要使用js来绘制 是一个行内块 -->
+		<canvas id="canbox" width="500px" height="300px"></canvas>
+	</body>
+	<script type="text/javascript">
+		//拿到画布
+		var box = document.getElementById("canbox");
+		box.style.border = "1px solid #000";
+		//拿到画笔 通过画布拿到画笔
+		var cnt = box.getContext("2d");
+		
+		//设置阴影 模糊程度 颜色 x偏移量 y偏移量
+		cnt.shadowBlur = 20;
+		cnt.shadowColor = "#000";
+		cnt.shadowOffsetX = 5;
+		cnt.shadowOffsetY = "5px";
+		
+		//设置颜色 填充的颜色fillStyle 线条的颜色
+		cnt.fillStyle = "#ff0000";
+		//绘制矩形 四个参数 X轴 Y轴 宽度 高度
+		cnt.fillRect(20,20,30,30);
+		//绘制文字
+		//设置文字颜色
+		cnt.fillStyle = "#000";
+		//设置文字大小和样式
+		cnt.font = "italic 30px 微软雅黑"
+		cnt.fillText("乌托邦",200,200);
+		
+		//绘制圆形 五个参数 X轴 Y轴 开始弧度 结束弧度 Math.PI代表在⚪中的180deg
+		
+		cnt.arc(150,100,50,0,Math.PI*2);
+		cnt.fill();
+		
+		//声明开始绘制
+		cnt.beginPath();
+		//声明线的颜色
+		cnt.strokeStyle = "#000";
+		//开始点
+		cnt.moveTo(200,200);
+		//结束点
+		cnt.lineTo(300,400);
+		//连接成线
+		cnt.stroke();
+		//绘制完关闭
+		cnt.closePath();
+	
+		//创建线性渐变的颜色 第一个点x轴 y轴 第二个点的x轴 y轴
+		var a = cnt.createLinearGradient(0,0,0,100);
+		a.addColorStop(0,"red");
+		a.addColorStop(1,"yellow");
+		//将画笔颜色变成渐变的颜色
+		cnt.fillStyle = a;
+		cnt.fillRect(0,0,400,400);
+		//创建径向渐变的颜色 第一个x轴 y轴 半径 第二个x轴 y轴 半径 
+		var b = cnt.createRadialGradient(0,0,5,60,80,100)
+		b.addColorStop(0,"green");
+		b.addColorStop(1,"blue");
+		cnt.fillStyle = b;
+		cnt.arc(100,100,50,0,Math.PI*2);
+		cnt.fill();
+		cnt.strokeStyle = b;
+		cnt.fillText("乌托邦",200,200);
+		//绘制图片
+		var img = new Image(); 
+		img.src = "img/iconSelected.png";
+		img.onload = function(){
+		//绘图要传7个参数  图片元素  要使用图片的x 坐标 y坐标  宽度  高度    在画布中需要绘的位置 的x y 轴 宽度  高度
+		//省略的形式是 元素  在画布上的x坐标  y坐标
+		cnt.drawImage(img,20,20);
+		}
+		
+	</script>
+</html>

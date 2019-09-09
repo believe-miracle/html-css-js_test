@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>以淡入淡出的效果显示或隐藏元素</title>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script language="javascript">
+		$(document).ready(function(){
+			//对单击"淡入显示百度窗口"按钮的响应
+			 $("#myfadein").click(function(){
+				$('IFrame').fadeIn('slow'); 
+				
+			});
+			//对单击"淡出显示百度窗口"按钮的响应
+		 	$("#myfadeout").click(function(){
+				$('IFrame').fadeOut('fast');
+			}); 
+			
+		});
+	</script></head>
+	<body>
+		<P style="text-align: center;margin-top: 15px;">
+			<input class="input" type="button" id="myfadein" 
+			value="淡入显示百度窗口" style="width: 500px;"/>
+			<input class="input" type="button" id="myfadeout" 
+			value="淡出隐藏百度窗口" style="width: 500px;"/></P>
+		<P style="text-align: center;margin-top: 5px;">	
+			<iframe id="IFrame" src="http://www.baidu.com" width="1000" height="1000"
+			style="border: 2px solid gray;"></iframe></P>
+			
+	</body>
+</html>

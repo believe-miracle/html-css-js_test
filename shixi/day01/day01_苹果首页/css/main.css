@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.body{
+	background: rgba(255,255,255,0.8);
+}
+.header{
+	height: 45px;
+	background:#000;
+}
+.header ul{
+	width:1170px ;
+	margin:0px auto;
+}
+.header ul li {
+	list-style: none;
+	/* display: inline-block;*/
+	float: left;
+} 
+.header a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	height: 45px;
+	width: 130px;
+	line-height: 45px;
+	text-align:center;
+}
+.header li:first-child a{
+	height: 45px;
+	background: url(../img/logo.png) no-repeat center center;
+	background-size: contain;
+}
+.header li:last-child a{
+	height: 45px;
+	background: url(../img/search.png) no-repeat center center;
+	background-size: contain;
+}
+.header li:nth-last-child(2) a{
+	height: 45px;
+	background: url(../img/shopping.png) no-repeat center center;
+	background-size: contain;
+}
+.footer{
+	width: 1170px;
+	height: 600px;
+	margin: 0 auto;
+	background: url(../img/iphoneX.jpg) no-repeat center;
+	background-size:90%;
+}
+.footer h3,p{
+	text-align: center;
+}
+h3{
+	font-size: 50px;
+	margin-top: 100px;
+}
+p{
+	font-size: 32px;
+}

@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+}
+img{
+	width: 100%;
+	height: 100%;
+	/* 动画的调用 */
+	/* animation: 调用动画的方法:动画名 时间 是否匀速 是否循环 */
+	animation: zhuan 1s linear infinite;
+}
+/* css3的动画 */
+/* 动画定义 */
+@keyframes zhuan{
+	/* css3 2d转换 transform: ; */
+	/* rotate旋转度数deg度数 */
+	form{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+img:hover{
+	/* 动画暂停 */
+	animation-play-state: paused;
+}

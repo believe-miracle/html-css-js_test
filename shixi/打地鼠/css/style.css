@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header,.main{
+	width: 400px;
+	margin: 10px auto;
+}
+.header{
+	height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+	color: blueviolet;
+	font-size: bold;
+	text-shadow: 3px 3px 5px yellow;
+}
+.main{
+	padding: 5px;
+	background: url(../img/5.jpg) no-repeat;
+}
+.main img{
+	width: 32%;
+	padding: 0px 2px;
+	height: 110px;
+}
+.result{
+	width: 100px;
+	line-height: 40px;
+	font-size: 16px;
+	margin: 20px auto;
+	text-align: center;
+	background: yellowgreen;
+}
+.action{
+	display: block;
+	width: 60px;
+	height: 30px;
+	border-radius: 30% ;
+	margin: 0 auto;
+	box-shadow: 3px 3px 5px #000;
+}

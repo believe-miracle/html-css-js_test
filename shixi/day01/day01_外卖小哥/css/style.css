@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: url(../img/tree.png) no-repeat center 20px;
+	background-size: 50%;
+	width: 100%;
+	overflow: hidden;
+}
+img{
+	width:10%;
+	position: absolute;
+	bottom: 0px;
+	left: -500px;
+	animation: pingyi 2s linear infinite;
+}
+
+@keyframes pingyi{
+	/* css3 2d转换 transform: ; */
+	/* rotate旋转度数deg度数 */
+	0%{left: 0px}
+	25%{left: 700px}
+	50%{left: 700px}
+	75%{left: 1400px}
+	100%{left: 2100px}
+}
+img:hover{
+	/* 动画暂停 */
+	animation-play-state: paused;
+}

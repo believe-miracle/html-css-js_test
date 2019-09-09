@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../img/2.jpg);
+}
+div{
+	position: absolute;
+}
+div:nth-child(1){
+	width: 650px;
+	height: 650px;
+	background: url(../img/fsw.png) no-repeat center;
+	background-size: contain;
+	top:0px;
+	left:50%;
+	margin-left:-325px;
+	/* 调用动画 */
+	animation: zhuan 10s linear infinite;
+}
+ul{
+	position: relative;
+}
+ul li{
+	list-style: none;
+	width: 130px;
+	height: 160px;
+	position: absolute;
+	/* 2d转换旋转的中心点 */
+	transform-origin: 40% 50%;
+	animation: renzhuan 10s linear infinite;
+}
+li:nth-child(1){
+	background: url(../img/boy.png) no-repeat center;
+	background-size: contain;
+	top: -20px;
+	left: 50%;
+	margin-left: -60px;
+}
+li:nth-child(2){
+	background: url(../img/girl.png) no-repeat center;
+	background-size: contain;
+	top: 40px;
+	right:40px;
+}
+li:nth-child(3){
+	background: url(../img/girls.png) no-repeat center;
+	background-size: contain;
+	top: 250px;
+	right:-20px;
+}
+li:nth-child(4){
+	background: url(../img/dog.png) no-repeat center;
+	background-size: contain;
+	top:440px ;
+	right:40px;
+}
+li:nth-child(5){
+	background: url(../img/hairboy.png) no-repeat center;
+	background-size: contain;
+	top: 530px;
+	left: 50%;
+	margin-left: -60px;
+}
+li:nth-child(6){
+	background: url(../img/mimi.png) no-repeat center;
+	background-size: contain;
+	top:440px ;
+	left:40px;
+}
+li:nth-child(7){
+	background: url(../img/mudog.png) no-repeat center;
+	background-size: contain;
+	top: 250px;
+	left:-20px;
+}
+li:nth-child(8){
+	background: url(../img/shamegirl.png) no-repeat center;
+	background-size: contain;
+	top: 40px;
+	left:40px;
+}
+div:nth-child(2){
+	width: 250px;
+	height: 600px;
+	background: url(../img/bracketsmall.png) no-repeat center;
+	background-size: contain;
+	top: 250px;
+	left: 50%;
+	margin-left: -125px;
+	
+	/* 设置层高 */
+	z-index: -1;
+}
+div:nth-child(3){
+	width: 350px;
+	height: 620px;
+	background: url(../img/bracket.png) no-repeat center;
+	background-size: contain;
+	top:250px;
+	left: 50%;
+	margin-left: -175px;
+	
+}
+div:nth-child(4){
+	width: 520px;
+	height: 320px;
+	background: url(../img/big-title.png) no-repeat center;
+	background-size: contain;
+	top:180px;
+	left: 50%;
+	margin-left: -260px;
+}
+div:nth-child(5){
+	width: 360px;
+	height: 120px;
+	background: url(../img/title.png) no-repeat center;
+	background-size: contain;
+	top:400px;
+	left: 50%;
+	margin-left: -180px;
+}
+div:nth-child(6){
+	width: 60px;
+	height: 60px;
+	background: url(../img/arrow.png) no-repeat center;
+	background-size: contain;
+	top:480px;
+	left: 50%;
+	margin-left: -30px;
+}
+@keyframes zhuan{
+	from{}
+	to{transform: rotate(360deg);}
+}
+@keyframes renzhuan{
+	from{}
+	to{transform: rotate(-360deg);}
+}

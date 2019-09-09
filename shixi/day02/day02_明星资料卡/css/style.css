@@ -1,0 +1,230 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:"微软雅黑";
+}
+figure{
+	position: relative;
+	width: 33%;
+	height:500px;
+	border:0.1px solid black;
+	display: inline-block;
+	overflow: hidden;
+}
+p,h2,div{
+	position: absolute;
+	/* 缓动 */
+	transition: all 0.5s;
+}
+figure div{
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+div img{
+	width: 100%;
+	height: 100%;
+}
+.page1 h2{
+	font-size: 30px;
+	color: red;
+	top: 50px;
+	left: 100px;
+}
+.page1 p{
+	width: 150px;
+	text-align: center;
+	background: red;
+	font-size: 18px;
+	color: wheat;
+}
+.page1 .a{
+	top: 200px;
+	left: 50px;
+	transform:translateY(500px);
+}
+.page1 .b{
+	top: 270px;
+	left: 50px;
+	transform: translateX(500px);
+}
+.page1 .c{
+	top: 340px;
+	left: 50px;
+	transform: translateX(-200px);
+}
+.page1:hover div{
+	left: 50px;
+	opacity: 0.8;
+}
+.page1:hover p{
+	transform: translate(0px);
+}
+.page2 h2{
+	top: 50px;
+	width: 100%;
+	font-size: 30px;
+	color:yellowgreen;
+	text-align: center;
+}
+.page2 p{
+	background: yellowgreen;
+	width: 100px;
+	text-align: center;
+}
+.page2 .a{
+	top: 200px;
+	left: 20%;
+	transform: translateX(-300px);
+}
+.page2 .b{
+	top:270px;
+	left: 20%;
+	transform: translateX(-1000px);
+}
+.page2 .c{
+	top: 340px;
+	left: 20%;
+	transform: translateX(-1700px);
+}
+.page2:hover div{
+	left:-50px;
+	opacity: 0.8;
+}
+.page2:hover p{
+	transform: translate(0px);
+}
+.page3 #box{
+	width:80%;
+	height: 80%;
+	border: 10px solid goldenrod;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	animation: roo 0.5s linear infinite;
+}
+.page3 h2{
+	font-size: 30px;
+	color:blue;
+	top: 20%;
+	left: 10%;
+	transform: translateY(-300px);
+}
+.page3 p{
+	width: 200px;
+	font-size: 18px;
+	color:blue;
+	right: 15%;
+	bottom: 40%;
+	transform: translateY(100px);
+	opacity: 0;
+}
+@keyframes roo{
+	from{transform: scale(0.5); opacity: 0.5;}
+	to{transform: scale(2);opacity: 0.5;}
+}
+.page3:hover #box{
+	animation: none;
+}
+.page3:hover h2{
+	transform: translate(0px);
+}
+.page3:hover p{
+	transform: translate(0px);
+	opacity: 1;
+}
+.page3:hover div:first-child{
+	top:-50px
+}
+.page4 h2{
+	top: 50px;
+	width: 250px;
+	text-align:center;
+	line-height: 40px;
+	background: blue;
+	color:white;
+	left: 50px;
+}
+.page4 p{
+	bottom: 120px;
+	right: 50px;
+	font-size: 18px;
+	color: darkolivegreen;
+}
+.page4 .sw{
+	height: 150%;
+	width: 100%;
+	background: white;
+	left: 0px;
+	top: 500px; 
+	transform-origin: 0% 0%;
+	/* opacity: 0.3;
+	transform:skewX(-50deg) rotateX(-30deg); */
+}
+.page4 p{
+	transform: translateY(500px);
+}
+.page4 h2{
+	transform: translateY(100px);
+	opacity: 0;
+}
+.page4:hover p{
+	transform: translate(0px);
+}
+.page4:hover h2{
+	transform: translate(0px);
+	opacity: 1;
+}
+.page4:hover div:first-child{
+	opacity: 0.8;
+}
+.page4:hover .sw{
+	opacity: 0.3;
+	transform:skewY(-45deg);
+}
+.page5 h2{
+	/* text-align: center; */
+	left:28%;
+	color: skyblue;
+	font-size:30px ;
+	top: 20%;
+	transform: translateX(-100px);
+}
+.page5 p{
+	font-size: 18px ;
+	color: blueviolet;
+	top:60%;
+	left: 30%;
+	width: 300px;
+	transform: translateY(200px);
+	opacity: 0;
+}
+.page5 .bd{
+	width:80%;
+	height: 80%;
+	border: 2px solid blueviolet;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transform-origin: 0% 0%;
+	transform: rotate(540deg) translateY(100px);
+}
+.page5:hover h2{
+	transform: translate(0px);
+	
+}
+.page5:hover p{
+	transform: translate(0px);
+	opacity: 1;
+}
+.page5:hover div:first-child{
+	opacity: 0.5;
+}
+.page5:hover .bd{
+	transform:/* translate(0px) */rotate(3600deg);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jquery 入门</title>
+	</head>
+	<body>
+		<div id="box" class="test">
+			真好看
+		</div>
+		jQuery是什么？是js的一个库（框架）增强了js的兼容性 添加方便调用的方法（基于js）
+		jQuery 轻量级库 独特对象定义方法 及 某些特有东西 
+		js定义变量 jQuery 需要使用jQuery的话需要导入库
+		var 定义   $符号定义
+		导入jQuery文件
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//jquery获取元素
+			//$("id# 标签class 的名字")
+			//拿到id 为box的元素
+			//js中文本获取 innerText jquery 中就是text 空参是获取元素的值,有参是赋值
+			//$("#box").text("");
+			//$("#box").text("好眼光")
+			//js修改html代码 innerHtml jquery 中就是html方法
+			//alert($("#box").html());
+			//$("#box").html("<b>hello</b>")
+			//js修改样式 style属性 jquery 中css方法
+			//$("#box").css("color","#FF0000");//修改颜色
+			//alert($("#box").css("color"));//获取颜色 以rgb显示
+			//js拿到class名字
+			alert(document.getElementById("box").getAttribute("class"));//拿到属性的值
+			document.getElementById("box").setAttribute("class","test1");//修改属性的值
+			//jquery 拿到属性的值
+			alert($("#box").attr("class")) ;//获取
+			$("#box").attr("class","test2");//修改设置
+		</script>
+	
+	</body>
+</html>

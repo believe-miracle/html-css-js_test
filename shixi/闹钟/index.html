@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>闹钟</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="data_box">
+			<p>距离您设置的时间还有</p>
+			<div class="hours"></div>时
+			<div class="minute"></div>分
+			<div class="second"></div>秒
+			<!-- &emsp;加制表符 -->
+			<p style="clear: both;">请设置你的闹钟:&emsp;
+				<input type="time" class="time">
+			</p>
+			<audio id="music" src="music/Maroon%205%20-%20She%20Will%20Be%20Loved%20%5Bmqms2%5D.mp3" >
+				当前浏览器不支持audio
+			</audio>
+		</div>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

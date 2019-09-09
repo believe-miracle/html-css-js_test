@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+img{
+	position: absolute;
+}
+#cat{
+	width: 100%;
+	height: 100%;
+}
+#cymbal{
+	bottom: 40%;
+	left: 5%;
+}
+#drink{
+	bottom: 30%;
+	left: 5%;
+}
+#eat{
+	bottom: 20%;
+	left: 5%;
+}
+#fart{
+	bottom: 40%;
+	right: 5%;
+}
+#pie{
+	bottom: 30%;
+	right: 5%;
+}
+#scratch{
+	bottom: 20%;
+	right: 5%;
+}
+div{
+	position: absolute;
+}
+/* 头 */
+#knockout{
+	width: 36%;
+	height: 8%;
+	top: 16%;
+	left: 32%;
+}
+/* 鼻子 */
+#angry{
+	width: 18%;
+	height: 10%;
+	top: 30%;
+	left: 41%;
+}
+/* 肚子 */
+#stomach{
+	width: 28%;
+	height: 16%;
+	bottom: 12%;
+	left: 36%;
+}
+/* 左右脚 */
+#footLeft{
+	width: 10%;
+	height: 5%;
+	bottom: 4%;
+	left: 36%;
+}
+#footRight{
+	width: 10%;
+	height: 5%;
+	bottom: 4%;
+	right: 36%;
+}

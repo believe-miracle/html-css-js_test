@@ -1,0 +1,114 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+ul{
+	/* 清除列表样式 */
+	list-style: none;
+}
+a{
+	/* 清除a标签下划线 */
+	text-decoration: none;
+}
+.w_900{
+	width: 900px;
+	margin: 0 auto;
+}
+.fl_left{
+	float: left;
+}
+.fl_right{
+	float: right;
+}
+.header1{
+	width: 100%;
+	height: 30px;
+	background: lavenderblush;
+}
+.content{
+	
+}
+.content a{
+	display: block;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 10px;
+}
+.content li{
+	float: left;
+}
+.content li:last-child a{
+	padding-right: 0px;
+}
+.header2{
+	width: 100%;
+	height: 80px;
+	padding: 10px 0px;
+	margin-bottom: 20px;
+}
+.header2 ul li{
+	padding-left: 10px;
+	width: 120px;
+	height: 80px;
+}
+.logo{
+	background: url(../img/wph.png) no-repeat;
+}
+ /* 级别 选择器的级别 id(100) class(10) 标签选择器(1) 大的值会覆盖小的*/
+.header2 ul .rightBox{
+	padding-left: 0px;
+	width: 510px;
+	height: 80px;
+}
+.right_head li{
+	float: left;
+}
+.right_head li:nth-child(1){
+	background: url(../img/100good.jpg) no-repeat;
+}
+.right_head li:nth-child(2){
+	background: url(../img/7day.jpg) no-repeat;
+}
+.right_head li:nth-child(3){
+	background: url(../img/sendBack.jpg) no-repeat;
+}
+.right_head li:last-child,.logo{
+	padding-left: 0px;
+	text-align: right;
+	line-height: 100px;
+}
+.nav_top{
+	width: 100%;
+	height: 40px;
+	background: hotpink;
+}
+.nav_top ul li{
+	float: left;
+}
+.nav_top ul li a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	/* padding: 0 20px; */
+	padding: 0 28px;
+	font-size: 16px;
+	color: #fff;
+}
+.nav_top ul li a:hover{
+	/*移动上去鼠标变抓手*/
+    cursor: pointer;
+	/*cursor: move;*/
+}
+.checkBtnBg{
+	background-color: rgba(0,0,0,0.4);
+}
+.fixed{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}

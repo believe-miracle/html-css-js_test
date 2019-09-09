@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+section{
+	width: 100%;
+	height: 100%;
+	background-color:skyblue; 
+	animation: back 25s linear infinite;
+	position: relative;
+}
+div{
+	display: inline-block;
+	position: absolute;
+	width: 300%;
+	height: 100%;
+}
+div:nth-child(1){
+	background: url(../img/cloud_one.png);
+	animation: roo 50s linear infinite;
+}
+div:nth-child(2){
+	background: url(../img/cloud_two.png);
+	animation: roo 75s linear infinite;
+}
+div:nth-child(3){
+	background: url(../img/cloud_three.png);
+	animation: roo 100s linear infinite;
+}
+@keyframes roo{
+	from{left: 0;}
+	to{left: -300%;}
+}
+@keyframes back{
+	0%{background:aqua ;}
+	50%{background:black;}
+	100%{background:aqua;}
+}

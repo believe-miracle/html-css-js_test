@@ -1,0 +1,94 @@
+*,img{
+	margin: 0;
+	padding: 0;
+}
+.phone{
+	width: 193px;
+	height: 408px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(../img/ui-phone.png) no-repeat;
+}
+.long_box div{
+	width: 167px;
+	height: 295px;
+	float: left;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.image_box{
+	width: 167px;
+	height: 295px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+}
+.long_box{
+	width: 1002px;
+	position: absolute;
+	animation: lunbo 10s linear infinite;
+}
+@keyframes lunbo{
+	0%{
+		left: 0px;
+	}
+	7.6%{
+		left: -167px;
+	}
+	15.2%{
+		left: -167px;
+	}
+	22.8%{
+		left: -334px;
+	}
+	30.4%{
+		left: -334px;
+	}
+	38%{
+		left: -501px;
+	}
+	45.6%{
+		left: -501px;
+	}
+	53.2%{
+		left: -668px;
+	}
+	60.8%{
+		left: -668px;
+	}
+	76%{
+		left: -835px;
+	}
+	83.6%{
+		left: -835px;
+	}
+}
+
+.image_box:hover .long_box{
+	/* 动画暂停 */
+	animation-play-state: paused;
+}
+/* 
+after 之后
+before 之前
+*/
+.image_box:after{
+	display: block;
+	width: 167px;
+	height: 295px;
+	position: absolute;
+	right: 0px;
+	background: url(../img/ui01.jpg);
+	background-size: contain;
+	
+}

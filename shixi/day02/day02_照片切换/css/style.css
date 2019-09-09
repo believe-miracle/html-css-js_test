@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: pink;
+}
+.box{
+	width:300px;
+	height: 300px;
+	margin: 200px auto;
+	background: url(../img/dog.png) no-repeat center;
+	background-size: 100%;
+	/* 边框设置 */
+	border: 10px solid ;
+	/* 边框颜色 上右下左 */
+	border-color:red yellow green blue;
+	/* 边框圆角 css3中的 */
+	border-radius: 18%;
+	/* 阴影 css3中的 右偏移量 下偏移量 模糊的范围 颜色*/
+	box-shadow: 8px 8px 10px #000;
+	/* 缓动 css3中的 */
+	transition: all 3s;
+	font-size: 50px;
+	color: deeppink;
+	/* 文字加粗 */
+	font-weight:bold;
+	text-shadow: 5px 5px 5px greenyellow;
+	animation: font-shadowm 2s linear infinite;
+	}
+.box:hover{
+	/* rotate旋转 scale放大缩小 */
+	transform: rotate(360deg) scale(1.5);
+	background: url(../img/mudog.png) no-repeat center;
+	background-size: 100%;
+}
+@keyframes font-shadowm{
+	0%{
+		color: pink;
+		text-shadow: 5px 5px 5px red }
+	10%{
+		color: palegreen;
+		text-shadow: 5px 5px 5px black}
+	20%{
+		color: #ADFF2F;
+		text-shadow: 5px 5px 5px blue}
+	30%{
+		color: #FFC0CB;
+		text-shadow: 5px 5px 5px blueviolet}
+	40%{
+		color: #FFFF00;
+		text-shadow: 5px 5px 5px brown}
+	50%{
+		color: palegoldenrod;
+		text-shadow: 5px 5px 5px burlywood}
+	60%{
+		color: palegreen;
+		text-shadow: 5px 5px 5px burlywood}
+	70%{
+		color: paleturquoise;
+		text-shadow: 5px 5px 5px olive}
+	80%{
+		color: papayawhip;
+		text-shadow: 5px 5px 5px orchid}
+	90%{
+		color: #FFEFD5;
+		text-shadow: 5px 5px 5px cornflowerblue}
+	100%{
+		color: plum;
+		text-shadow: 5px 5px 5px blueviolet}
+}

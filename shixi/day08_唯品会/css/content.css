@@ -1,0 +1,57 @@
+.nav_left{
+	font-size: 16px;
+	border: #A0A0A0 1px solid;
+	width: 80px;
+	padding-bottom: 5px;
+	float: left;
+}
+.nav_left ul li{
+	padding-top: 10px;
+	width: 30px
+	height: 30px;
+	line-height: 30px;
+	border-bottom: #A0A0A0 1px solid;
+	position: relative;
+	margin-right: 25px;
+	margin-left: 10px;
+}
+.nav_left ul li:last-child{
+	border-bottom: none;
+}
+.mainContent{
+	float: left;
+	margin-left: 140px;
+}
+.jingxuan{
+	text-align: center;
+}
+.bigTitle{
+	font-size: 35px;
+}
+.smallTitle{
+	color: #A0A0A0;
+	font-size: bold;
+}
+.mainTitle{
+	width: 150px;
+	text-align: center;
+	font-size: 30px;
+	border-bottom: #A0A0A0 5px solid;
+	margin: 0px 5px;
+}
+.jingxuanImg{
+	width: 100%;
+	float: left;
+	border-top: #A0A0A0 1px solid;
+	margin-top: 2px;
+	padding-bottom: 30px;
+}
+.jingxuanImg ul{
+	margin: 30px;
+}
+.jingxuanImg ul ol img{
+	display: inline-block;
+	float: left;
+	width: 400px;
+	padding: 10px;
+} 

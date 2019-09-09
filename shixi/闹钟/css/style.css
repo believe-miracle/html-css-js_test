@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: darkgray;
+}
+.data_box{
+	width: 500px;
+	margin: 100px auto;
+	background: wheat;
+	line-height: 40px;
+	color: darkgoldenrod;
+	border-color:#0000FF #B8860B #B8860B #DEB887;   
+	padding: 5px;
+	text-shadow: 3px 3px 3px yellow;
+}
+.data_box div{
+	background: burlywood;
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	color: #000000;
+	text-align: right;
+	margin: 0px 10px;
+}

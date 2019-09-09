@@ -1,0 +1,63 @@
+.ImageContent{
+	margin:40px auto;
+}
+.banner img{
+	width: 100%;
+	height: 400px;
+}
+.banner_text{
+	width: 300px;
+	line-height: 40px;
+	margin: 0px auto;
+}
+.banner_text div{
+	width:150px;
+	font-size: 14px;
+	color: #a0a0a0;
+	text-align: center;
+}
+.box_solid{
+	/* 清除浮动 */
+	clear: both;
+	height: 2px;
+	background: red;
+	position: relative;
+	left: 0px;
+}
+.box div{
+	width:435px;
+	height: 280px;
+	float: left;
+	position: relative;
+}
+.box div img{
+	width: 100%;
+	height: 82%;
+}
+.box div:nth-child(1){
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+.box div:nth-child(3){
+	clear: both;
+	margin-right: 30px;
+}
+.box .addBox{
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(../img/good2.png) no-repeat;
+	background-size: 100%;
+	border-radius: 5%;
+	z-index: 99;
+}
+.nav_left{
+	position: absolute;
+	left: 30px;
+	top: 800px;
+}
